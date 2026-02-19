@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunovu - Spam SMS Engelleme</title>
+    <meta name="description" content="Bunovu - iOS için akıllı spam SMS engelleme uygulaması. Spam, dolandırıcılık ve istenmeyen mesajları otomatik olarak engelleyin.">
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <link rel="canonical" href="https://apprev.github.io/bunovu/">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-light: #818CF8;
+            --green: #22C55E;
+            --bg: #0F0F1A;
+            --card: #1A1A2E;
+            --text: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --radius: 16px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+        /* Nav */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        nav .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.3rem; font-weight: 700; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary-light); }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 28px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--text); }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(79,70,229,0.15);
+            color: var(--primary-light);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+        .hero h1 span { color: var(--primary-light); }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 36px;
+        }
+        .app-store-btn {
+            display: inline-block;
+            background: var(--text);
+            color: var(--bg);
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .app-store-btn:hover { transform: scale(1.03); opacity: 0.95; }
+
+        /* Features */
+        .features { padding: 60px 0; }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 48px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 28px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .feature-icon {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+        }
+        .feature-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+        .feature-card p { font-size: 0.9rem; color: var(--text-secondary); }
+
+        /* Privacy Section */
+        .privacy-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .privacy-section h2 { font-size: 2rem; margin-bottom: 16px; }
+        .privacy-section > .container > p {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1.05rem;
+        }
+        .privacy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            text-align: center;
+        }
+        .privacy-item {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 24px 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .privacy-item .icon { font-size: 2rem; margin-bottom: 12px; }
+        .privacy-item h4 { font-size: 0.95rem; margin-bottom: 6px; }
+        .privacy-item p { font-size: 0.82rem; color: var(--text-secondary); }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--primary-light); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="./" class="logo">Bun<span>ovu</span></a>
+        <div class="nav-links">
+            <a href="#features">Özellikler</a>
+            <a href="#privacy">Gizlilik</a>
+            <a href="privacy.html">Gizlilik Politikası</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="badge">🛡️ Sıfır Veri Toplama</div>
+        <h1>Spam SMS'lere <span>Son Verin</span></h1>
+        <p>Bunovu, yapay zeka destekli akıllı filtreleme ile spam, dolandırıcılık, kumar ve istenmeyen SMS'leri otomatik olarak engeller. Tamamen cihazınızda çalışır.</p>
+        <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="app-store-btn">App Store'dan İndir</a>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <div class="container">
+        <h2>Neden Bunovu?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(79,70,229,0.15);">🤖</div>
+                <h3>Akıllı AI Koruma</h3>
+                <p>12+ kategoride yapay zeka destekli spam algılama. Spam, kumar, dolandırıcılık ve oltalama mesajlarını otomatik yakalar.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(34,197,94,0.15);">🔒</div>
+                <h3>Tamamen Gizli</h3>
+                <p>Hiçbir mesajınız okunmaz, saklanmaz veya paylaşılmaz. Sunucu yok, analitik yok, internet bağlantısı gerekmez.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(249,115,22,0.15);">⚡</div>
+                <h3>Kişisel Filtreler</h3>
+                <p>Kendi anahtar kelimelerinizi ekleyin. İçerir, ile başlar ve regex eşleşme türleriyle tam kontrol sizde.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(168,85,247,0.15);">✅</div>
+                <h3>Güvenilir Gönderenler</h3>
+                <p>Beyaz liste ile önemli gönderenlerinizi koruyun. Banka, kargo gibi güvendiğiniz kaynaklar asla filtrelenmez.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(236,72,153,0.15);">🌍</div>
+                <h3>6 Dil Desteği</h3>
+                <p>Türkçe, İngilizce, Almanca, Fransızca, İspanyolca ve Arapça tam dil desteği.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="background:rgba(14,165,233,0.15);">🧪</div>
+                <h3>Test Modu</h3>
+                <p>Filtrelerinizi gerçek mesajlarla test edin. Spam skoru, eşleşen kurallar ve detaylı analiz sonuçlarını görün.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="privacy-section" id="privacy">
+    <div class="container">
+        <h2>Gizliliğiniz Bizim Önceliğimiz</h2>
+        <p>Bunovu, Apple'ın Message Filter mimarisini kullanır. Mesajlarınıza doğrudan erişimimiz yoktur.</p>
+        <div class="privacy-grid">
+            <div class="privacy-item">
+                <div class="icon">🍎</div>
+                <h4>Apple Kısıtı</h4>
+                <p>Apple, üçüncü parti uygulamaların SMS kutusunu doğrudan okumasına izin vermez.</p>
+            </div>
+            <div class="privacy-item">
+                <div class="icon">📵</div>
+                <h4>İnternet Yok</h4>
+                <p>Filtreleme tamamen çevrimdışı çalışır. Verileriniz cihazınızdan çıkmaz.</p>
+            </div>
+            <div class="privacy-item">
+                <div class="icon">🚫</div>
+                <h4>Sunucu Yok</h4>
+                <p>Backend, API veya uzak veritabanı bulunmaz. Sıfır veri toplama.</p>
+            </div>
+            <div class="privacy-item">
+                <div class="icon">📱</div>
+                <h4>Cihaz Üzerinde</h4>
+                <p>Tüm filtreleme ve AI analizi %100 cihazınızda gerçekleşir.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Bunovu. Tüm hakları saklıdır.</p>
+        <p style="margin-top:8px;">
+            <a href="privacy.html">Gizlilik Politikası</a> · 
+            <a href="mailto:[email]">İletişim</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

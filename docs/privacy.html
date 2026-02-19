@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Bunovu</title>
+    <meta name="description" content="Bunovu Gizlilik Politikası. Hiçbir kullanıcı verisi toplanmaz, saklanmaz veya paylaşılmaz.">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-light: #818CF8;
+            --bg: #0F0F1A;
+            --card: #1A1A2E;
+            --text: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --radius: 16px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        nav .nav-inner { max-width: 960px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-size: 1.3rem; font-weight: 700; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary-light); }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; margin-left: 28px; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--text); }
+
+        .content { padding: 60px 0 80px; }
+        h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 8px; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 40px; font-size: 0.95rem; }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--primary-light);
+        }
+        p, li { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .highlight-box p { margin-bottom: 0; color: var(--text); font-weight: 500; }
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        footer a { color: var(--primary-light); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="./" class="logo">Bun<span>ovu</span></a>
+        <div class="nav-links">
+            <a href="./">Ana Sayfa</a>
+            <a href="privacy.html">Gizlilik Politikası</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="container">
+        <h1>Gizlilik Politikası</h1>
+        <p class="subtitle">Son güncelleme: 19 Şubat 2026</p>
+
+        <div class="highlight-box">
+            <p>🛡️ Bunovu hiçbir kullanıcı verisi toplamaz, saklamaz, paylaşmaz veya herhangi bir sunucuya göndermez. Uygulama tamamen cihazınızda çalışır.</p>
+        </div>
+
+        <h2>1. Genel Bakış</h2>
+        <p>Bunovu ("Uygulama"), iOS için geliştirilmiş bir spam SMS engelleme uygulamasıdır. Apple'ın IdentityLookup (Message Filter) çerçevesini kullanarak bilinmeyen gönderenlerden gelen istenmeyen SMS mesajlarını filtreler. Uygulama, kullanıcı gizliliğini en üst düzeyde korumak üzere tasarlanmıştır.</p>
+
+        <h2>2. Toplanan Veriler</h2>
+        <p>Bunovu hiçbir kişisel veri toplamaz. Detaylı olarak:</p>
+        <ul>
+            <li>Mesaj içerikleri okunmaz, saklanmaz veya kaydedilmez</li>
+            <li>Telefon numaraları veya gönderici bilgileri toplanmaz</li>
+            <li>Kullanıcı kimlik bilgileri (ad, e-posta, konum vb.) istenmez</li>
+            <li>Kullanım istatistikleri veya analitik verileri toplanmaz</li>
+            <li>Çerez (cookie) veya izleme teknolojileri kullanılmaz</li>
+            <li>Reklam tanımlayıcıları veya cihaz parmak izi alınmaz</li>
+        </ul>
+
+        <h2>3. Uygulamanın Çalışma Prensibi</h2>
+        <p>Bunovu, Apple'ın SMS filtreleme mimarisini kullanır:</p>
+        <ul>
+            <li>iOS, yalnızca rehberinizde kayıtlı olmayan gönderenlerden gelen mesajları filtre uzantısına iletir</li>
+            <li>Rehberinizdeki kişilerden gelen mesajlar asla filtrelenmez ve uzantıya gönderilmez</li>
+            <li>Filtre uzantısı, mesajı cihaz üzerinde analiz eder ve "izin ver" veya "önemsiz" kararı verir</li>
+            <li>Bu karar iOS'a iletilir ve işlem tamamlanır</li>
+            <li>Mesaj içeriği hiçbir yerde saklanmaz veya kaydedilmez</li>
+        </ul>
+
+        <h2>4. Yapay Zeka Filtreleme (Akıllı Koruma)</h2>
+        <p>Uygulamanın akıllı koruma özelliği, cihaz üzerinde çalışan bir spam puanlama motorudur:</p>
+        <ul>
+            <li>Tüm analiz tamamen cihazınızda gerçekleşir</li>
+            <li>İnternet bağlantısı gerekmez</li>
+            <li>Hiçbir mesaj verisi dışarıya gönderilmez</li>
+            <li>Makine öğrenimi modeli veya bulut tabanlı AI kullanılmaz</li>
+            <li>Spam, dolandırıcılık, kumar, oltalama gibi kategorilerde yerel analiz yapılır</li>
+        </ul>
+
+        <h2>5. Veri Depolama</h2>
+        <p>Kullanıcının oluşturduğu filtre kuralları ve uygulama ayarları yalnızca cihazın yerel depolama alanında (UserDefaults, App Group) saklanır:</p>
+        <ul>
+            <li>Filtre kuralları (anahtar kelimeler ve eşleşme türleri)</li>
+            <li>Güvenilir gönderen listesi (beyaz liste)</li>
+            <li>Uygulama tercihleri (dil seçimi, akıllı filtre durumu)</li>
+        </ul>
+        <p>Bu veriler yalnızca cihazınızda bulunur ve hiçbir sunucuya aktarılmaz.</p>
+
+        <h2>6. Üçüncü Taraf Hizmetler</h2>
+        <p>Bunovu hiçbir üçüncü taraf hizmeti, SDK veya analitik aracı kullanmaz:</p>
+        <ul>
+            <li>Reklam ağı entegrasyonu yoktur</li>
+            <li>Analitik veya izleme SDK'sı yoktur</li>
+            <li>Sosyal medya entegrasyonu yoktur</li>
+            <li>Bulut depolama veya senkronizasyon hizmeti yoktur</li>
+            <li>Sunucu tarafı bileşen (backend, API) yoktur</li>
+        </ul>
+
+        <h2>7. İnternet Bağlantısı</h2>
+        <p>Bunovu internet bağlantısı gerektirmez ve kullanmaz. Uygulama tamamen çevrimdışı çalışır. Hiçbir ağ isteği yapılmaz.</p>
+
+        <h2>8. Çocukların Gizliliği</h2>
+        <p>Uygulama hiçbir kullanıcıdan veri toplamadığı için çocuklara özel ek bir gizlilik riski bulunmamaktadır. Uygulama tüm yaş grupları için güvenlidir.</p>
+
+        <h2>9. Gizlilik Politikası Değişiklikleri</h2>
+        <p>Bu gizlilik politikası güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır. Uygulamanın temel prensibi olan "sıfır veri toplama" ilkesi değişmeyecektir.</p>
+
+        <h2>10. İletişim</h2>
+        <p>Gizlilik politikası hakkında sorularınız için bizimle iletişime geçebilirsiniz:</p>
+        <p>E-posta: <a href="mailto:[email]" style="color:var(--primary-light);text-decoration:none;">[email]</a></p>
+
+        <div class="highlight-box" style="margin-top:36px;">
+            <p>📱 Özet: Bunovu mesajlarınızı okumaz, verilerinizi toplamaz ve hiçbir bilgiyi cihazınızın dışına göndermez. Tüm işlemler %100 cihazınızda gerçekleşir.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Bunovu. Tüm hakları saklıdır.</p>
+        <p style="margin-top:8px;"><a href="./">Ana Sayfa</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
