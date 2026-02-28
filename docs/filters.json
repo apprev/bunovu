@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "lastUpdated": "2026-02-28 04:00",
   "spamThreshold": 40.0,
   "thresholdMin": 25.0,
   "thresholdMax": 75.0,
