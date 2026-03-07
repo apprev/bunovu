@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-02-28 04:00",
+  "lastUpdated": "2026-03-07T03:00:00Z",
   "spamThreshold": 40.0,
   "thresholdMin": 25.0,
   "thresholdMax": 75.0,
@@ -25,7 +25,28 @@
     "free shipping", "free delivery", "toll free",
     "risk free environment", "slot available", "time slot",
     "poker face", "poker yuzu", "spinning top",
-    "freelance", "freedom", "freely"
+    "freelance", "freedom", "freely",
+    "kargonuz dagitima", "kargonuz teslim", "kargo takip",
+    "teslimat adresi", "gonderi durumu", "subeye ulasti",
+    "teslim edildi", "dagitimda", "dagitima cikti"
+  ],
+  "trustedSenders": [
+    "ptt", "pttkargo", "ptt kargo",
+    "surat", "suratkargo", "surat kargo", "suratcargo",
+    "aras", "araskargo", "aras kargo",
+    "kolaygelsin", "kolay gelsin",
+    "yurtici", "yurticikargo", "yurtici kargo",
+    "mng", "mngkargo", "mng kargo",
+    "sendeo",
+    "ups", "dhl", "fedex", "tnt",
+    "hepsijet", "hepsi jet",
+    "trendyolexpress", "trendyol express", "tyexpress",
+    "getir", "scotty",
+    "horoz", "horozlojistik",
+    "cainiao", "yanwen",
+    "birgunde", "bir gunde",
+    "jetizz",
+    "packupp"
   ],
   "keywords": [
     {"word": "bedava", "weight": 15},
@@ -438,7 +459,12 @@
       "takip numarasi", "takip no", "tracking",
       "shipment", "delivered", "delivery",
       "teslimat adresi", "kargo durumu",
-      "teslim edilecek", "subeye ulasti"
+      "teslim edilecek", "subeye ulasti",
+      "dagitima cikarildi", "teslim alindi",
+      "kargo numarasi", "gonderi takip",
+      "paketi", "paketiniz", "kargo hareketi",
+      "sube", "aktarma merkezi", "transfer merkezi",
+      "kargo subesi", "teslimat sureci"
     ],
     "appointmentKeywords": [
       "randevu", "randevunuz", "appointment",
@@ -456,11 +482,39 @@
       "new login", "new device", "sign-in",
       "sifre degisikligi", "password changed",
       "guvenlik uyarisi", "security alert"
+    ],
+    "telekomKeywords": [
+      "sozlesme", "abonelik", "abonelig",
+      "fatura", "son odeme tarihi", "odeme tarihi gecmis",
+      "hizmetiniz", "hattiniz", "numarali",
+      "online islemler", "internet bankacilig",
+      "odemeniz yapildiysa", "dikkate almayiniz",
+      "hizmet acil", "acilacaktir"
+    ],
+    "knownLegitDomains": [
+      "turktelekom.com.tr", "turkcell.com.tr", "vodafone.com.tr",
+      "ttnet.com.tr", "superonline.net",
+      "garanti.com.tr", "akbank.com", "isbank.com.tr",
+      "yapikredi.com.tr", "ziraatbank.com.tr", "halkbank.com.tr",
+      "vakifbank.com.tr", "denizbank.com", "qnbfinansbank.com",
+      "enpara.com", "tosla.com", "papara.com",
+      "yurticikargo.com", "aras.com.tr", "mngkargo.com.tr",
+      "pttkargo.gov.tr", "ptt.gov.tr", "sendeo.com.tr", "suratcargo.com",
+      "suratkargo.com.tr", "kolaygelsin.com",
+      "ups.com.tr", "dhl.com.tr", "fedex.com", "tnt.com",
+      "hepsijet.com", "trendyolexpress.com",
+      "horoz.com.tr", "horozlojistik.com.tr",
+      "scotty.com.tr", "getir.com",
+      "e-devlet.gov.tr", "turkiye.gov.tr", "sgk.gov.tr",
+      "gib.gov.tr", "enerjisa.com.tr", "baskentdogalgaz.com.tr",
+      "igdas.istanbul", "iski.istanbul", "tedas.gov.tr",
+      "epdk.gov.tr", "enerji.gov.tr"
     ]
   },
   "knownLegitSenderPrefixes": {
     "bank": ["banka", "bank", "finans", "sigorta", "emekli"],
-    "cargo": ["kargo", "ptt", "ups", "dhl", "fedex", "mng", "aras", "yurtici", "surat"],
-    "government": ["sgk", "gib", "e-devlet", "turkiye", "saglik", "egitim"]
+    "cargo": ["kargo", "ptt", "pttkargo", "ups", "dhl", "fedex", "tnt", "mng", "mngkargo", "aras", "araskargo", "yurtici", "yurticikargo", "surat", "suratkargo", "kolaygelsin", "kolay gelsin", "sendeo", "hepsijet", "hepsi jet", "trendyolexpress", "trendyol express", "tyexpress", "horoz", "horozlojistik", "scotty", "getir", "birgunde", "jetizz", "packupp"],
+    "government": ["sgk", "gib", "e-devlet", "turkiye", "saglik", "egitim"],
+    "telekom": ["turk telekom", "ttnet", "turkcell", "vodafone", "superonline", "turksat"]
   }
 }
