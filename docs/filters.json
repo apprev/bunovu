@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-03-07T03:00:00Z",
+  "lastUpdated": "2026-03-09T19:30:00Z",
   "spamThreshold": 40.0,
   "thresholdMin": 25.0,
   "thresholdMax": 75.0,
@@ -28,7 +28,11 @@
     "freelance", "freedom", "freely",
     "kargonuz dagitima", "kargonuz teslim", "kargo takip",
     "teslimat adresi", "gonderi durumu", "subeye ulasti",
-    "teslim edildi", "dagitimda", "dagitima cikti"
+    "teslim edildi", "dagitimda", "dagitima cikti",
+    "dogrulama kodu", "onay kodunuz", "giris kodu",
+    "giris isleminiz icin gonderilmistir",
+    "telefon numarasiyla giris", "kimseyle paylasmayiniz",
+    "tek kullanimlik kod", "otp kodu"
   ],
   "trustedSenders": [
     "ptt", "pttkargo", "ptt kargo",
@@ -394,7 +398,6 @@
     {"word": "ozel", "weight": 5},
     {"word": "aktif", "weight": 4},
     {"word": "aktf", "weight": 4},
-    {"word": "kod", "weight": 4},
     {"word": "getiri", "weight": 6},
     {"word": "kar payi", "weight": 10},
     {"word": "starpay", "weight": 12},
@@ -441,7 +444,9 @@
       "dogrulama", "onay kodu", "guvenlik kodu", "sifre",
       "verification", "your code", "otp", "one-time",
       "tek kullanimlik", "giris kodu", "login code",
-      "dogrulama kodu", "onay kodunuz", "kodunuz"
+      "dogrulama kodu", "onay kodunuz", "kodunuz",
+      "giris islemi", "giris isleminiz", "telefon numarasiyla giris",
+      "kimseyle paylasmayiniz", "tek kullanimlik kod"
     ],
     "bankKeywords": [
       "son odeme", "odeme tarihi", "borc", "bakiye",
@@ -481,7 +486,9 @@
       "yeni cihaz", "yeni giris", "giris yapildi",
       "new login", "new device", "sign-in",
       "sifre degisikligi", "password changed",
-      "guvenlik uyarisi", "security alert"
+      "guvenlik uyarisi", "security alert",
+      "giris isleminiz icin gonderilmistir",
+      "telefon numarasiyla giris"
     ],
     "telekomKeywords": [
       "sozlesme", "abonelik", "abonelig",
